@@ -1,0 +1,21 @@
+{
+  "name": "OWL FAMILY Store",
+  "short_name": "OWL FAMILY",
+  "description": "Premium streetwear, smart casual, corporate and vintage clothing. Based in Abuja, Nigeria.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0D0D",
+  "theme_color": "#C4622D",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

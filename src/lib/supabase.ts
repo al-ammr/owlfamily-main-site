@@ -1,0 +1,3 @@
+// supabase.ts
+
+export {};
