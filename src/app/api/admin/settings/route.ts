@@ -52,6 +52,7 @@ export async function POST(request: Request) {
     }))
 
     // Invalidate edge/next cache
+    // @ts-expect-error - Next.js 16 typing mismatch
     revalidateTag('site_settings')
 
     return NextResponse.json({ success: true })

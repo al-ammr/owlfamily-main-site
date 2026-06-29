@@ -33,7 +33,7 @@ export default async function AdminLayout({
     <div className="bg-[#0D0D0D] min-h-screen text-[#F5F0E8] flex">
       {session && <AdminSidebar />}
       
-      <div className={`flex-1 flex flex-col min-h-screen ${session ? 'md:ml-[240px]' : ''}`}>
+      <div className={`flex-1 flex flex-col min-h-screen ${session ? 'md:ml-64' : ''}`}>
         {session && <AdminTopbar />}
         
         <main className="flex-1 overflow-y-auto">
