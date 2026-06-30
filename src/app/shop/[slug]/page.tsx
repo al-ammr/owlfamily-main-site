@@ -25,7 +25,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       images: [product.images[0]],
       title: `${product.name} | OWL FAMILY Store`,
       description: product.description,
-      type: 'product',
+      type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
