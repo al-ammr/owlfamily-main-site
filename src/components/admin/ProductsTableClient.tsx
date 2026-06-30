@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Search, Plus, Edit2, Trash2, AlertTriangle } from "lucide-react";
+import { Search, Plus, Edit2, Trash2, AlertTriangle, Image as ImageIcon } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 
 interface Product {
@@ -234,7 +234,7 @@ export function ProductsTableClient({ initialProducts }: { initialProducts: Prod
         {totalPages > 1 && (
           <div className="p-4 border-t border-[#1E1E1E] flex items-center justify-between">
             <span className="font-mono text-[10px] text-[#9CA3AF] uppercase tracking-widest">
-              Showing {(currentPage - 1) * itemsPerPage + 1} to Math.min(currentPage * itemsPerPage, filteredProducts.length) of {filteredProducts.length}
+              Showing {(currentPage - 1) * itemsPerPage + 1} to {Math.min(currentPage * itemsPerPage, filteredProducts.length)} of {filteredProducts.length}
             </span>
             <div className="flex gap-2">
               <button 
