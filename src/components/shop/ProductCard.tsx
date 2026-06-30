@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useCartStore } from "@/store/cartStore";
-import { Product } from "@/data/products";
+import { Product } from "@/types";
 import { useToast } from "@/components/ui/Toast";
 
 const BG_GRADIENTS: Record<string, string> = {
