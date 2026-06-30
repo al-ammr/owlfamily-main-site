@@ -51,6 +51,8 @@ export default function CheckoutClient({ paystackPublicKey, shippingStandardPric
     }
   });
 
+  const selectedDelivery = watch('deliveryMethod');
+
   const SHIPPING_RATES: Record<string, number> = {
     'standard': shippingStandardPrice,
     'express': shippingExpressPrice,
